@@ -1,0 +1,40 @@
+history -w
+history -w
+ssh-keygen
+cat $HOME/.ssh/*.pub
+cd
+mkdir repogit
+cd repogit
+cat $Home/.ssh/*.pub
+cat $HOME/.ssh/*.pub
+git clone git@github.com:NahuBenitez21/TP_AySO.git
+cd TP_AySO/
+pwd
+ls -l
+cat /etc/os-release
+man grep
+grep HOME-URL /etc/os-release
+grep home-url /etc/os-release
+grep -i Home_url /etc/os-release
+whoami
+echo "Usuario=$(whoami)" > datos_usuario.txt
+ls
+git add .
+git config --global user.email "ntvg64@gmail.com"
+git config --global user.name "sergiobenitez"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuario.txt"
+git status
+git push
+grep "model name" /proc/cpuinfo | head  -n1 >> datos_usuario.txt
+git commit -m "feat: Añadiendo informacion al CPU" 
+git add datos_usuario.txt
+git commit -m "feat: Añadiendo informacion de CPU"
+cat <<EOF >> README.md
+Alumno: Sergio Benitez
+DIvision: 311 Turno: Noche
+EOF
+
+git add README.md datos_usuario.txt
+git commit -m 'ADD: Añadiendo Readme y datos de usuario'
+git push
+history -a
